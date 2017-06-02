@@ -1,3 +1,5 @@
+import * as tooltips from './Tooltips'
+export { tooltips }
 export { ListItem } from './ListItem/index'
 export { EventItem } from './EventItem/index'
 export { EventsList } from './EventsList/index'
@@ -16,8 +18,6 @@ export { ConfirmationModal } from './ConfirmationModal'
 export { TimeEvent } from './TimeEvent'
 import * as fields from './fields'
 export { fields }
-import * as tooltips from './Tooltips'
-export { tooltips }
 export { RepeatEventSummary } from './RepeatEventSummary/index'
 export { AgendaItem } from './AgendaItem'
 export { CoverageAssign } from './CoverageAssign'

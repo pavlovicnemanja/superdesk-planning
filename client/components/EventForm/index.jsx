@@ -1,8 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../../actions'
-import { fields } from '../../components'
-import { RelatedPlannings, RepeatEventForm } from '../index'
+import { RelatedPlannings, RepeatEventForm, fields } from '../index'
 import { Field, FieldArray, reduxForm, formValueSelector } from 'redux-form'
 import { isNil, get } from 'lodash'
 import moment from 'moment'
@@ -93,6 +92,10 @@ export class Component extends React.Component {
                 </div>
                 <div className="EventForm__form">
                     {error && <div className="error-block">{error}</div>}
+                    <div>
+                        <Field name="pubstatus"
+                               component={fields.PubStatusField}/>
+                    </div>
                     <div>
                         <label htmlFor="name">What</label>
                     </div>

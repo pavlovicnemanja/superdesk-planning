@@ -201,7 +201,7 @@ const saveLocation = (event) => (
 /**
  * Action Dispatcher to create or save an event
  * This action is private to this module only.
- * Also adds the user timezone, and notify the form to reset and hide the modal
+ * Also adds the user timezone
  * @param {object} newEvent
  * @return arrow function
  */
